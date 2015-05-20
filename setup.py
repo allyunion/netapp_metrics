@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
         name='netapp_ontap_api',
-        version='0.1',
+        version='0.1.1',
         description='NetApp OnTAP API wrapper',
         long_description='API wrapper for NetApp OnTAP API that understands '
-            'between cluster mode (C-mode) and non-cluster (7-mode) mode'
+            'between cluster mode (C-mode) and non-cluster (7-mode) mode',
         url='https://github.com/allyunion/netapp_ontap_api',
         author='Jason Y. Lee',
         author_email='jylee@cs.ucr.edu',
@@ -25,5 +25,5 @@ setup(
             'Programming Language :: Python :: 3.4',
         ],
         keywords='netapp ontap api wrapper development',
-        py_modules= ['netapp_ontap_api', 'netapp_ontap_api.NetAppMetrics'],
+        packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     )

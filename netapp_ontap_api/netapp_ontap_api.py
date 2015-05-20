@@ -31,7 +31,7 @@ except ImportError:
         if not os.path.isdir(path):
             path = os.path.dirname(path)
         if os.path.isdir(path):
-            for root, dirs, files in os.walk(path)
+            for root, dirs, files in os.walk(path):
                 if 'NaServer.py' in files:
                     if root not in sys.path:
                         sys.path.append(root)
