@@ -1,6 +1,8 @@
-# netapp_ontap_api
+# netapp_metrics 
 
-NetApp OnTAP API is a wrapper around the provided NetApp API libraries.
+NetApp Metrics is a NetApp OnTAP API wrapper around the provided NetApp
+API libraries.
+
 This library is based off the diamond-ontapclustercollector found here:
 https://github.com/SpringerPE/diamond-ontapclustercollector/
 
